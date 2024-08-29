@@ -7,3 +7,10 @@ algoritmo para ler o custo de fábrica de um carro,calcular e escrever
 o custo final ao consumidor.
  */
 
+let custoFabrica = parseInt(prompt("Qual o valor do carro que você quer comprar?"))
+
+let impostos = 45 / 100
+let distribuidor = 28 / 100
+let custoFinalConsumidor = (custoFabrica * impostos) + (custoFabrica * distribuidor) + custoFabrica
+
+document.write("Seu carro novo ficará com total de " + custoFinalConsumidor.toFixed(3) + ",00")
